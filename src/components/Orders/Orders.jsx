@@ -19,13 +19,13 @@ function Orders({order}) {
         <p>Product: {order.product}</p>
         <p>Quantity: {order.quantity}</p>
         <div className="buttons">
-            <button onClick={()=>{
+            <button className="editbtn" onClick={()=>{
                 dispatch({
                       type:"SET_EDITORDER",
                       editOrder:order.id,
                   })
                   }}>Edit</button>
-            <button onClick={()=>removeOrder(order.id)}>Remove</button>
+            <button className="rmbtn" onClick={()=>removeOrder(order.id)}>Remove</button>
         </div>
         </div>
     )

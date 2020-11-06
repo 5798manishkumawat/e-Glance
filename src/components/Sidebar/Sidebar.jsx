@@ -11,7 +11,7 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <div className="sidebar_profile">
-            <Avatar src={user.imageUrl} alt="" />
+            <img src={user.imageUrl} alt="" />
             <h4 className="title">{user.name}</h4>
 			</div>
             <hr />

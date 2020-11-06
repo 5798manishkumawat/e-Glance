@@ -6,7 +6,7 @@ function Login() {
 // eslint-disable-next-line no-unused-vars
 const [{user},dispatch] = useDataLayerValue();
 const responseSuccessGoogle = (response) =>{
-        console.log(response);
+        //console.log(response);
         dispatch({
             type:"SET_USER",
             user:response.profileObj
@@ -18,7 +18,7 @@ const responseSuccessGoogle = (response) =>{
 }
 
 const responseFailureGoogle = (response) =>{
-    console.log(response);
+    console.log("yessss");
 }
 
     return (

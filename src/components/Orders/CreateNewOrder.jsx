@@ -6,15 +6,18 @@ const [{user,OrderData},dispatch] =useDataLayerValue();
 const [product,setProduct]=useState("Product 1");
 const [quantity, setQuantity] = useState("1");
 const saveData =() =>{
+
+    const id = (Math.floor(Math.random()*1000)).toString().concat("5e2940fdadsfhsjaf010246d41");
+    //console.log(id);
     const order ={
-        "id": "5e2940fdadsfhsjaf010246d41",
+        "id":id,
         "customer_name":user.name,
         "customer_email": user.email,
         "product":product,
         "quantity": quantity
     };
-
-    OrderData.push(order);
+    console.log(order);
+    OrderData.unshift(order);
     dispatch({
         type:"SET_NEWORDER",
         newOrder:false
@@ -24,8 +27,8 @@ const saveData =() =>{
 
 
     return (
-        <div className="">
             <form className="form">
+                <h1>Only Can Add Product And Quantity!!</h1>
                 <div className="formData">
                     <label>Name:</label>
                     <input type="text" defaultValue={user.name} />
@@ -48,10 +51,9 @@ const saveData =() =>{
                 </div>
 
                 <div className="formData">
-                   <button value="Save" onClick={()=>saveData()}>Save</button>
+                   <button className="savebtn" value="Save" onClick={()=>saveData()}>Save</button>
                 </div>
             </form>
-        </div>
     )
 }
 

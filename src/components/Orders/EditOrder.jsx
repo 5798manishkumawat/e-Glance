@@ -40,13 +40,14 @@ const updateData =() =>{
     return (
         <div className="">
             <form className="form">
+                <h1>Only Can Update Product And Quantity!!</h1>
                 <div className="formData">
                     <label>Name:</label>
-                   <p>{order.customer_name}</p>
+                    <input type="text" defaultValue={order.customer_name} readOnly/>
                 </div>
                 <div className="formData">
                     <label>Email:</label>
-                    <p>{order.customer_email}</p>
+                    <input type="email" defaultValue={order.customer_email} readOnly/>
                 </div>
                 <div className="formData">
                     <label>Product:</label>
@@ -62,7 +63,7 @@ const updateData =() =>{
                 </div>
 
                 <div className="formData">
-                   <button defaultValue="Update" onClick={()=>updateData()}>Update</button>
+                   <button className="savebtn" defaultValue="Update" onClick={()=>updateData()}>Update</button>
                 </div>
             </form>
         </div>
