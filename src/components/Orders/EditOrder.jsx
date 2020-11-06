@@ -51,7 +51,7 @@ const updateData =() =>{
                 </div>
                 <div className="formData">
                     <label>Product:</label>
-                    <select defaultValue={order.product} onChange={(e)=>setProduct(e.target.value)}>
+                    <select value={order.product} onChange={(e)=>setProduct(e.target.value)}>
                     <option value="Product 1">Product 1</option>
                     <option value="Product 2">Product 2</option>
                     <option value="Product 3">Product 3</option>
@@ -59,7 +59,7 @@ const updateData =() =>{
                 </div>
                 <div className="formData">
                     <label>Quantity:</label>
-                    <input type="number" defaultValue={quantity} onChange={(e)=>setQuantity(e.target.value)}/>
+                    <input type="number" value={quantity} onChange={(e)=>setQuantity(e.target.value)}/>
                 </div>
 
                 <div className="formData">
