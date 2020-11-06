@@ -1,0 +1,7 @@
+.order_container {
+	margin-left: 20px;
+	padding: 10px;
+	display: grid;
+	place-items: left;
+	color: white;
+}
