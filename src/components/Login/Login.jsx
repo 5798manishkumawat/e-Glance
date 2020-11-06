@@ -18,7 +18,7 @@ const responseSuccessGoogle = (response) =>{
 }
 
 const responseFailureGoogle = (response) =>{
-    alert("Someting Went Wrong:).");
+    console.log("yessss");
 }
 
     return (

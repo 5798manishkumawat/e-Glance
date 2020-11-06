@@ -4,4 +4,66 @@
 	display: grid;
 	place-items: left;
 	color: white;
+	border: 2px solid gray;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	background-color: rgb(180, 179, 241);
+}
+.newOrder {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+.editbtn {
+	background-color: #9ed6e0;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	margin: 2px 1px;
+	cursor: pointer;
+}
+
+.rmbtn {
+	background-color: #e45d45;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	margin: 2px 1px;
+	cursor: pointer;
+}
+
+.savebtn {
+	background-color: #63c93b;
+	width: 60px;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	margin: 2px 1px;
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }

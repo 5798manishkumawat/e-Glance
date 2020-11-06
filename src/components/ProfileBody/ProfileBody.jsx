@@ -11,7 +11,8 @@ function ProfileBody() {
     return (
         <div className="profileBody">
             {(newOrder===true)?<CreateNewOrder />:
-            ((editOrder!==null)?<EditOrder id={editOrder} />:( OrderData.map((item) => {
+            ((editOrder!==null)?<EditOrder id={editOrder} />:( 
+                OrderData.map((item) => {
                 return (
                     <Orders order={item} key={item.id} />
                 );
